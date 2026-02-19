@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kontakt – Struktur & Resultat</title>
+  <meta name="description" content="Boka ett strategisamtal med Struktur & Resultat." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <b>Struktur &amp; Resultat</b>
+      <span>Strukturpartner för småföretag</span>
+    </a>
+    <nav class="links">
+      <a href="index.html">Start</a>
+      <a href="tjanster.html">Tjänster</a>
+      <a href="om.html">Om</a>
+      <a class="active cta" href="kontakt.html">Boka samtal</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div class="kicker">15 min • Kostnadsfritt • Ingen bindning</div>
+    <h1>Kontakt</h1>
+    <p class="lead">
+      Skriv kort om din situation så återkommer jag. Vill du boka direkt? Lägg in din Calendly-länk här när du skapat den.
+    </p>
+  </section>
+
+  <section class="section">
+    <div class="split">
+      <div class="panel">
+        <h2 style="margin:0 0 10px;">Skicka meddelande</h2>
+        <!-- Obs: GitHub Pages kan inte skicka formulär utan extern tjänst.
+             Du kan använda Formspree / Getform senare. -->
+        <form class="form" action="mailto:DITTMAIL@EXEMPEL.SE" method="post" enctype="text/plain">
+          <div>
+            <label for="name">Namn</label>
+            <input id="name" name="Namn" placeholder="Ditt namn" required />
+          </div>
+          <div>
+            <label for="email">E-post</label>
+            <input id="email" name="E-post" type="email" placeholder="namn@foretag.se" required />
+          </div>
+          <div>
+            <label for="msg">Meddelande</label>
+            <textarea id="msg" name="Meddelande" placeholder="Vad vill du få ordning på? (leads, uppföljning, admin, dokument...)"></textarea>
+          </div>
+          <button class="btn primary" type="submit">Skicka</button>
+          <div class="mini">Tips: Byt ut mail-adressen i koden till din riktiga.</div>
+        </form>
+      </div>
+
+      <div class="panel">
+        <h2 style="margin:0 0 10px;">Boka direkt</h2>
+        <p class="mini" style="margin:0 0 12px;">
+          Skapa en gratis bokningslänk i Calendly och klistra in den här (sen kan vi bädda in den snyggt).
+        </p>
+        <a class="btn primary" href="#" onclick="alert('Lägg in din Calendly-länk här senare!')">Boka 15 min</a>
+
+        <div style="margin-top:18px;border-top:1px solid var(--line);padding-top:14px;">
+          <p class="mini" style="margin:0;">E-post: DITTMAIL@EXEMPEL.SE</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">© <span id="y"></span> Struktur &amp; Resultat</div>
+</footer>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
